@@ -6,6 +6,6 @@ directories:
       sha: e78013ed93372448ea5d507a4eb1350344fb8ec5
       tags:
       - kube-vip-cloud-provider-0.2.2
-    path: kube-vip-cloud-provider
-  path: helm
+    path: .
+  path: helm/kube-vip-cloud-provider-app
 kind: LockConfig
