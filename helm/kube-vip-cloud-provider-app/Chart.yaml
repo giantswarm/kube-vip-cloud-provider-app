@@ -1,22 +1,22 @@
 apiVersion: v2
 appVersion: 0.0.1
+# version: 0.0.1
+version: [[ .Version ]]
 
-# Please make sure your name DOES NOT end in "app" or "-app".
-name: {APP-NAME}
+name: kube-vip-cloud-provider
 
-# Please describe what the app provides in a sentence or two.
-description: Please add description
+description: kube-vip-cloud-provider helm chart installs controller that assigns the free IP to a service of type LoadBalancer. It ships also the NetworkPolicies.
 
-home: https://github.com/giantswarm/{APP-NAME}
+home: https://github.com/giantswarm/kube-vip-cloud-provider
 
 # If you have an icon/logo, you should add it to https://github.com/giantswarm/web-assets
 # and set the final URL as a value here and uncomment.
 #icon: https://s.giantswarm.io/app-icons/example/1/light.svg
 
 sources:
-- https://github.com/some-org/some-repo
-version: 0.0.0-dev # [[ .Version ]] if you're using architect instead of app-build-suite
+- https://github.com/giantswarm/kube-vip-cloud-provider
 annotations:
-  application.giantswarm.io/team: TEAM-NAME # used through .Chart.Annotations.team (not replaced automatically)
-  branch: my-branch # Used through .Chart.Annotations.branch (This is not replaced automatically)
-  commit: f00bar # Used through .Chart.Annotations.commit (This is not replaced automatically)
+  application.giantswarm.io/team: rocket
+maintainers:
+  - name: Team Rocket
+    email: team-rocket@giantswarm.io
