@@ -12,3 +12,4 @@ directories:
     ignorePaths:
     - Chart.yaml
     - _gs-helpers.tpl
+    - templates/npols.yaml
