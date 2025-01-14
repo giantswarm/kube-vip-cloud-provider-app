@@ -2,10 +2,14 @@ apiVersion: vendir.k14s.io/v1alpha1
 directories:
 - contents:
   - git:
-      commitTitle: 'Merge pull request #16 from yaocw2020/deployment...'
-      sha: e78013ed93372448ea5d507a4eb1350344fb8ec5
+      commitTitle: 'Merge pull request #53 from rptaylor/20241030-kvcp-seccon...'
+      sha: 859474c5bae2ba00c2e2f8898c4f594848c459a1
       tags:
-      - kube-vip-cloud-provider-0.2.2
+      - kube-vip-cloud-provider-0.2.5
+    path: kube-vip-cloud-provider
+  path: vendor
+- contents:
+  - directory: {}
     path: .
-  path: helm/kube-vip-cloud-provider-app
+  path: helm
 kind: LockConfig
