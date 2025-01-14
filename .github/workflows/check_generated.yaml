@@ -20,6 +20,6 @@ jobs:
       with:
         only: vendir
     - name: generate manifests
-      run: APPLICATION=helm/kube-vip-cloud-provider-app make update-chart
+      run: APPLICATION=helm/kube-vip-cloud-provider make update-chart
     - name: check no change
       run: git diff --quiet --exit-code && [ -z "$(git status --porcelain)" ]

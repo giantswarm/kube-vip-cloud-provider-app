@@ -1,4 +1,4 @@
 replace-chart-version-with-git: true
 generate-metadata: true
-chart-dir: ./helm/kube-vip-cloud-provider-app
+chart-dir: ./helm/kube-vip-cloud-provider
 destination: ./build
