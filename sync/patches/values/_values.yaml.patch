@@ -1,0 +1,24 @@
+diff --git a/helm/kube-vip-cloud-provider/values.yaml b/helm/kube-vip-cloud-provider/values.yaml
+index c670986..17f4b5b 100644
+--- a/helm/kube-vip-cloud-provider/values.yaml
++++ b/helm/kube-vip-cloud-provider/values.yaml
+@@ -5,7 +5,7 @@
+ replicasCount: 1
+ 
+ image:
+-  repository: kubevip/kube-vip-cloud-provider
++  repository: gsoci.azurecr.io/giantswarm/kube-vip-cloud-provider
+   pullPolicy: IfNotPresent
+   # Overrides the image tag whose default is the chart appVersion.
+   # tag: "v0.0.4"
+@@ -22,7 +22,9 @@ image:
+ #     cidr-global: 192.168.0.240/29
+ 
+ cm:
+-  data: {}
++  data:
++    cidr-global: ""
++    range-global: ""
+ 
+ # By default, kube-vip-cloud-provider will use a configMap automatically generated from .Values.cm.data.
+ # If .Values.configMapName is defined, it will use that configMap instead, which you must create yourself.

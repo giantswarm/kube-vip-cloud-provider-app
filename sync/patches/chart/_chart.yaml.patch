@@ -1,0 +1,11 @@
+diff --git a/helm/kube-vip-cloud-provider/Chart.yaml b/helm/kube-vip-cloud-provider/Chart.yaml
+index 65e8a9a..89b1b10 100644
+--- a/helm/kube-vip-cloud-provider/Chart.yaml
++++ b/helm/kube-vip-cloud-provider/Chart.yaml
+@@ -26,3 +26,6 @@ icon: https://github.com/kube-vip/kube-vip/raw/main/kube-vip.png
+ 
+ maintainers:
+   - name: kube-vip
++
++annotations:
++  application.giantswarm.io/team: "rocket"
