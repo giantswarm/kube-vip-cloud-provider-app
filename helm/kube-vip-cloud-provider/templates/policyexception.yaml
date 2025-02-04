@@ -1,0 +1,18 @@
+apiVersion: policy.giantswarm.io/v1alpha1
+kind: PolicyException
+metadata:
+  annotations:
+    "helm.sh/hook": "pre-install,pre-upgrade"
+  name: {{ include "kube-vip-cloud-provider.name" . }}
+  namespace: policy-exceptions
+  labels:
+    {{- include "kube-vip-cloud-provider.labels" . | nindent 4 }}
+spec:
+  policies:
+    - require-ro-rootfs
+  targets:
+    - kind: Deployment
+      namespaces:
+      - {{ .Release.Namespace | default "kube-system" }}
+      names:
+      - {{ include "kube-vip-cloud-provider.name" . }}*
