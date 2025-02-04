@@ -17,5 +17,5 @@ directories:
         path: vendor/kube-vip-cloud-provider/charts/
       ignorePaths:
         - kube-vip-cloud-provider/templates/npols.yaml
-        - kube-vip/templates/policyexception.yaml
-        - kube-vip/values.schema.json
+        - kube-vip-cloud-provider/templates/policyexception.yaml
+        - kube-vip-cloud-provider/values.schema.json
