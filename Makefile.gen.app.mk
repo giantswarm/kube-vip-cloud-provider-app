@@ -26,7 +26,7 @@ lint-chart: check-env ## Runs ct against the default chart.
 
 update-chart: check-env ## Sync chart with upstream repo.
 	@echo "====> $@"
-	vendir sync
+	sync/sync.sh
 	$(MAKE) update-deps
 
 update-deps: check-env $(DEPS) ## Update Helm dependencies.
