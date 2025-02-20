@@ -1,6 +1,8 @@
 # DO NOT EDIT. Generated with:
 #
-#    devctl@6.15.1
+#    devctl
+#
+#    https://github.com/giantswarm/devctl/blob/eea19f200d7cfd27ded22474b787563bbfdb8ec4/pkg/gen/input/makefile/internal/file/Makefile.gen.app.mk.template
 #
 
 ##@ App
@@ -26,7 +28,7 @@ lint-chart: check-env ## Runs ct against the default chart.
 
 update-chart: check-env ## Sync chart with upstream repo.
 	@echo "====> $@"
-	sync/sync.sh
+	vendir sync
 	$(MAKE) update-deps
 
 update-deps: check-env $(DEPS) ## Update Helm dependencies.
