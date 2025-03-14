@@ -1,0 +1,12 @@
+diff --git a/helm/kube-vip-cloud-provider/templates/deployment.yaml b/helm/kube-vip-cloud-provider/templates/deployment.yaml
+index 2bf12dc..979a9e7 100644
+--- a/helm/kube-vip-cloud-provider/templates/deployment.yaml
++++ b/helm/kube-vip-cloud-provider/templates/deployment.yaml
+@@ -32,6 +32,7 @@ spec:
+             capabilities:
+               drop:
+                 - ALL
++            readOnlyRootFilesystem: true
+             runAsNonRoot: true
+             runAsUser: 65532
+             runAsGroup: 65532
