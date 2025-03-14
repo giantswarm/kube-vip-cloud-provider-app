@@ -13,5 +13,6 @@ readonly script_dir_rel=".${script_dir#"${repo_dir}"}"
 
 set -x
 git apply "${script_dir_rel}/_chart.yaml.patch"
+git apply "${script_dir_rel}/_deployment.yaml.patch"
 
 { set +x; } 2>/dev/null
