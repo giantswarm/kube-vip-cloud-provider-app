@@ -1,11 +1,35 @@
 diff --git a/helm/kube-vip-cloud-provider/Chart.yaml b/helm/kube-vip-cloud-provider/Chart.yaml
-index 65e8a9a..89b1b10 100644
+index 65e8a9a..050cbc8 100644
 --- a/helm/kube-vip-cloud-provider/Chart.yaml
 +++ b/helm/kube-vip-cloud-provider/Chart.yaml
-@@ -26,3 +26,6 @@ icon: https://github.com/kube-vip/kube-vip/raw/main/kube-vip.png
- 
+@@ -1,7 +1,6 @@
+ apiVersion: v2
+ name: kube-vip-cloud-provider
+ description: A Helm chart for kube-vip cloud provider
+-
+ # A chart can be either an 'application' or a 'library' chart.
+ #
+ # Application charts are a collection of templates that can be packaged into versioned archives
+@@ -11,18 +10,16 @@ description: A Helm chart for kube-vip cloud provider
+ # a dependency of application charts to inject those utilities and functions into the rendering
+ # pipeline. Library charts do not define any templates and therefore cannot be deployed.
+ type: application
+-
+ # This is the chart version. This version number should be incremented each time you make changes
+ # to the chart and its templates, including the app version.
+ # Versions are expected to follow Semantic Versioning (https://semver.org/)
+-version: 0.2.5
+-
++version: 0.3.0
+ # This is the version number of the application being deployed. This version number should be
+ # incremented each time you make changes to the application. Versions are not expected to
+ # follow Semantic Versioning. They should reflect the version the application is using.
+ appVersion: v0.0.10
+-
+-icon: https://github.com/kube-vip/kube-vip/raw/main/kube-vip.png
+-
++icon: https://s.giantswarm.io/app-icons/kube-vip/1/light.png
  maintainers:
    - name: kube-vip
-+
 +annotations:
 +  application.giantswarm.io/team: "rocket"
