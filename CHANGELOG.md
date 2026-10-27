@@ -31,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update architect to v10.14.18 (giantswarm/kube-vip-cloud-provider-app#115)
 - Update architect to v10.15.1 (giantswarm/kube-vip-cloud-provider-app#116)
 - Update architect to v10.16.3 (giantswarm/kube-vip-cloud-provider-app#117)
+- Update architect to v10.16.5 (giantswarm/kube-vip-cloud-provider-app#119)
 
 ### Fixed
 
