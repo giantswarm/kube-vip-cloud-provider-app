@@ -4,8 +4,9 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-dir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) ; readonly dir
-cd "${dir}/.."
+SCRIPT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) ; readonly SCRIPT_DIR
+cd "${SCRIPT_DIR}/.."
+source "${SCRIPT_DIR}"/_helpers.sh
 
 # Stage 1 sync - intermediate to the ./vendir folder
 set -x
@@ -18,4 +19,3 @@ helm dependency update helm/kube-vip-cloud-provider/
 ./sync/patches/chart/patch.sh
 ./sync/patches/helpers/patch.sh
 ./sync/patches/chart-label/patch.sh
-

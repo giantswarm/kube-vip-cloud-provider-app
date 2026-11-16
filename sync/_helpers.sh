@@ -1,8 +1,7 @@
-#!/usr/bin/env bash
-
-set -e
-set -u
-set -o pipefail
+# file has no shebang so shellcheck needs to be told
+# shellcheck shell=bash
+# stop shellcheck complaining about unused variables
+# shellcheck disable=SC2034
 
 # root dir of the git repository
 REPO_DIR=$(git rev-parse --show-toplevel) ; readonly repo_dir
